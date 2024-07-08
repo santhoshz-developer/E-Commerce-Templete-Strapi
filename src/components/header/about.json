@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_header_abouts",
+  "info": {
+    "displayName": "About"
+  },
+  "options": {},
+  "attributes": {
+    "About": {
+      "type": "string"
+    }
+  }
+}

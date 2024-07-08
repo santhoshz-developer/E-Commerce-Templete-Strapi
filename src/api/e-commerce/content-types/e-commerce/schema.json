@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "e_commerces",
+  "info": {
+    "singularName": "e-commerce",
+    "pluralName": "e-commerces",
+    "displayName": "E-commerce"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Header": {
+      "displayName": "Header",
+      "type": "component",
+      "repeatable": true,
+      "component": "header.header"
+    },
+    "Body": {
+      "displayName": "Body",
+      "type": "component",
+      "repeatable": true,
+      "component": "body.body"
+    },
+    "Footer": {
+      "displayName": "Footer",
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.footer"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_header_shops",
+  "info": {
+    "displayName": "Shop"
+  },
+  "options": {},
+  "attributes": {
+    "Shop": {
+      "type": "string"
+    }
+  }
+}
