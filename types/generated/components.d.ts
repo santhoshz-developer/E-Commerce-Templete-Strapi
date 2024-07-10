@@ -3,91 +3,99 @@ import type { Schema, Attribute } from '@strapi/strapi';
 export interface BodyBody extends Schema.Component {
   collectionName: 'components_body_bodies';
   info: {
-    displayName: 'Body';
+    displayName: 'body';
+    description: '';
   };
-  attributes: {};
+  attributes: {
+    heading: Attribute.String;
+    subHeading: Attribute.Text;
+    description: Attribute.Text;
+    button: Attribute.Component<'body.button'>;
+    productImage: Attribute.Component<'body.product-image', true>;
+  };
+}
+
+export interface BodyButton extends Schema.Component {
+  collectionName: 'components_body_buttons';
+  info: {
+    displayName: 'button';
+  };
+  attributes: {
+    text: Attribute.String;
+    type: Attribute.String;
+  };
+}
+
+export interface BodyProductImage extends Schema.Component {
+  collectionName: 'components_body_product_images';
+  info: {
+    displayName: 'productImage';
+    description: '';
+  };
+  attributes: {
+    image: Attribute.String;
+    text: Attribute.String;
+    subText: Attribute.String;
+    price: Attribute.String;
+    bannerImage: Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+  };
 }
 
 export interface FooterFooter extends Schema.Component {
   collectionName: 'components_footer_footers';
   info: {
-    displayName: 'Footer';
-  };
-  attributes: {};
-}
-
-export interface HeaderAbout extends Schema.Component {
-  collectionName: 'components_header_abouts';
-  info: {
-    displayName: 'About';
+    displayName: 'footer';
+    description: '';
   };
   attributes: {
-    About: Attribute.String;
-  };
-}
-
-export interface HeaderContact extends Schema.Component {
-  collectionName: 'components_header_contacts';
-  info: {
-    displayName: 'Contact';
-  };
-  attributes: {
-    Contact: Attribute.String;
+    title: Attribute.String;
+    main: Attribute.String;
+    submain: Attribute.String;
+    subtitle: Attribute.String;
+    sub: Attribute.String;
+    text: Attribute.String;
+    description: Attribute.Text;
   };
 }
 
 export interface HeaderHeader extends Schema.Component {
   collectionName: 'components_header_headers';
   info: {
-    displayName: 'Header';
+    displayName: 'header';
+    description: '';
   };
   attributes: {
-    logo: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
-    Home: Attribute.Component<'header.home', true>;
-    Shop: Attribute.Component<'header.shop', true>;
-    About: Attribute.Component<'header.about', true>;
-    Contact: Attribute.Component<'header.contact', true>;
-    NavIcons: Attribute.Component<'header.nav-icons', true>;
+    NavMenu: Attribute.Component<'header.nav-menu'>;
+    NavIcon: Attribute.Component<'header.nav-icon'>;
+    logo: Attribute.String;
   };
 }
 
-export interface HeaderHome extends Schema.Component {
-  collectionName: 'components_header_homes';
+export interface HeaderNavIcon extends Schema.Component {
+  collectionName: 'components_header_nav_icons';
   info: {
-    displayName: 'Home';
+    displayName: 'NavIcon';
+  };
+  attributes: {
+    UserIcon: Attribute.String;
+    SearchIcon: Attribute.String;
+    FavoriteIcon: Attribute.String;
+  };
+}
+
+export interface HeaderNavMenu extends Schema.Component {
+  collectionName: 'components_header_nav_menus';
+  info: {
+    displayName: 'NavMenu';
   };
   attributes: {
     Home: Attribute.String;
-  };
-}
-
-export interface HeaderNavIcons extends Schema.Component {
-  collectionName: 'components_header_nav_icons';
-  info: {
-    displayName: 'NavIcons';
-  };
-  attributes: {
-    userIcon: Attribute.String;
-    searchIcon: Attribute.String;
-    favoriteIcon: Attribute.String;
-  };
-}
-
-export interface HeaderNavMenus extends Schema.Component {
-  collectionName: 'components_header_nav_menus';
-  info: {
-    displayName: 'NavMenus';
-  };
-  attributes: {};
-}
-
-export interface HeaderShop extends Schema.Component {
-  collectionName: 'components_header_shops';
-  info: {
-    displayName: 'Shop';
-  };
-  attributes: {
     Shop: Attribute.String;
+    About: Attribute.String;
+    Contact: Attribute.String;
   };
 }
 
@@ -95,14 +103,12 @@ declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'body.body': BodyBody;
+      'body.button': BodyButton;
+      'body.product-image': BodyProductImage;
       'footer.footer': FooterFooter;
-      'header.about': HeaderAbout;
-      'header.contact': HeaderContact;
       'header.header': HeaderHeader;
-      'header.home': HeaderHome;
-      'header.nav-icons': HeaderNavIcons;
-      'header.nav-menus': HeaderNavMenus;
-      'header.shop': HeaderShop;
+      'header.nav-icon': HeaderNavIcon;
+      'header.nav-menu': HeaderNavMenu;
     }
   }
 }

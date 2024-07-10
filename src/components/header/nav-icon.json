@@ -1,17 +1,17 @@
 {
   "collectionName": "components_header_nav_icons",
   "info": {
-    "displayName": "NavIcons"
+    "displayName": "NavIcon"
   },
   "options": {},
   "attributes": {
-    "userIcon": {
+    "UserIcon": {
       "type": "string"
     },
-    "searchIcon": {
+    "SearchIcon": {
       "type": "string"
     },
-    "favoriteIcon": {
+    "FavoriteIcon": {
       "type": "string"
     }
   }

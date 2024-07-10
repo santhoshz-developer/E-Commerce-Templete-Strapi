@@ -4,27 +4,28 @@
   "info": {
     "singularName": "e-commerce",
     "pluralName": "e-commerces",
-    "displayName": "E-commerce"
+    "displayName": "E-commerce",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Header": {
-      "displayName": "Header",
+    "header": {
+      "displayName": "header",
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "header.header"
     },
-    "Body": {
-      "displayName": "Body",
+    "body": {
+      "displayName": "body",
       "type": "component",
       "repeatable": true,
       "component": "body.body"
     },
-    "Footer": {
-      "displayName": "Footer",
+    "footer": {
+      "displayName": "footer",
       "type": "component",
       "repeatable": true,
       "component": "footer.footer"
