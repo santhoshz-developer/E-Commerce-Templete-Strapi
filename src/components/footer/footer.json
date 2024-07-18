@@ -1,8 +1,31 @@
 {
   "collectionName": "components_footer_footers",
   "info": {
-    "displayName": "Footer"
+    "displayName": "footer",
+    "description": ""
   },
   "options": {},
-  "attributes": {}
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "main": {
+      "type": "string"
+    },
+    "submain": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "sub": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
 }

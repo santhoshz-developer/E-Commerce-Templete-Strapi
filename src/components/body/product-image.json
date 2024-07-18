@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_body_product_images",
+  "info": {
+    "displayName": "productImage",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "subText": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "bannerImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

@@ -1,49 +1,25 @@
 {
   "collectionName": "components_header_headers",
   "info": {
-    "displayName": "Header"
+    "displayName": "header",
+    "description": ""
   },
   "options": {},
   "attributes": {
+    "NavMenu": {
+      "displayName": "NavMenu",
+      "type": "component",
+      "repeatable": false,
+      "component": "header.nav-menu"
+    },
+    "NavIcon": {
+      "displayName": "NavIcon",
+      "type": "component",
+      "repeatable": false,
+      "component": "header.nav-icon"
+    },
     "logo": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": true
-    },
-    "Home": {
-      "displayName": "Home",
-      "type": "component",
-      "repeatable": true,
-      "component": "header.home"
-    },
-    "Shop": {
-      "displayName": "Shop",
-      "type": "component",
-      "repeatable": true,
-      "component": "header.shop"
-    },
-    "About": {
-      "displayName": "About",
-      "type": "component",
-      "repeatable": true,
-      "component": "header.about"
-    },
-    "Contact": {
-      "displayName": "Contact",
-      "type": "component",
-      "repeatable": true,
-      "component": "header.contact"
-    },
-    "NavIcons": {
-      "displayName": "NavIcons",
-      "type": "component",
-      "repeatable": true,
-      "component": "header.nav-icons"
+      "type": "string"
     }
   }
 }
