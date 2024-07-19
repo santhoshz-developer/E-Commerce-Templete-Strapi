@@ -26,6 +26,9 @@
       "type": "component",
       "repeatable": true,
       "component": "body.product-image"
+    },
+    "template_Id": {
+      "type": "biginteger"
     }
   }
 }
