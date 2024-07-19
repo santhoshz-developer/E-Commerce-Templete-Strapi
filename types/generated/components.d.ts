@@ -12,6 +12,7 @@ export interface BodyBody extends Schema.Component {
     description: Attribute.Text;
     button: Attribute.Component<'body.button'>;
     productImage: Attribute.Component<'body.product-image', true>;
+    template_Id: Attribute.BigInteger;
   };
 }
 
