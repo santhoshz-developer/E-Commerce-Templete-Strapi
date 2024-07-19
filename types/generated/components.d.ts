@@ -59,6 +59,7 @@ export interface FooterFooter extends Schema.Component {
     sub: Attribute.String;
     text: Attribute.String;
     description: Attribute.Text;
+    image: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
   };
 }
 
@@ -71,7 +72,7 @@ export interface HeaderHeader extends Schema.Component {
   attributes: {
     NavMenu: Attribute.Component<'header.nav-menu'>;
     NavIcon: Attribute.Component<'header.nav-icon'>;
-    logo: Attribute.String;
+    image: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
   };
 }
 
