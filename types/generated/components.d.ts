@@ -80,11 +80,13 @@ export interface HeaderNavIcon extends Schema.Component {
   collectionName: 'components_header_nav_icons';
   info: {
     displayName: 'NavIcon';
+    description: '';
   };
   attributes: {
     UserIcon: Attribute.String;
     SearchIcon: Attribute.String;
     FavoriteIcon: Attribute.String;
+    Cart: Attribute.String;
   };
 }
 
