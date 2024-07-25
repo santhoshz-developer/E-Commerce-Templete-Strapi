@@ -19,14 +19,18 @@
       "type": "string"
     },
     "bannerImage": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "offer": {
+      "type": "string"
     }
   }
 }

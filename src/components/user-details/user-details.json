@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_user_details_user_details",
+  "info": {
+    "displayName": "userDetails"
+  },
+  "options": {},
+  "attributes": {
+    "userId": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "password": {
+      "type": "password"
+    },
+    "phoneNumber": {
+      "type": "integer"
+    }
+  }
+}
