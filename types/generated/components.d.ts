@@ -42,6 +42,7 @@ export interface BodyProductImage extends Schema.Component {
       'images' | 'files' | 'videos' | 'audios',
       true
     >;
+    offer: Attribute.String;
   };
 }
 
@@ -103,6 +104,20 @@ export interface HeaderNavMenu extends Schema.Component {
   };
 }
 
+export interface UserDetailsUserDetails extends Schema.Component {
+  collectionName: 'components_user_details_user_details';
+  info: {
+    displayName: 'userDetails';
+  };
+  attributes: {
+    userId: Attribute.String;
+    username: Attribute.String;
+    email: Attribute.Email;
+    password: Attribute.Password;
+    phoneNumber: Attribute.Integer;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
@@ -113,6 +128,7 @@ declare module '@strapi/types' {
       'header.header': HeaderHeader;
       'header.nav-icon': HeaderNavIcon;
       'header.nav-menu': HeaderNavMenu;
+      'user-details.user-details': UserDetailsUserDetails;
     }
   }
 }

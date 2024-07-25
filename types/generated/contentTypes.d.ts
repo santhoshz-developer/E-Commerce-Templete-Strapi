@@ -377,6 +377,8 @@ export interface ApiECommerceECommerce extends Schema.CollectionType {
     header: Attribute.Component<'header.header'>;
     body: Attribute.Component<'body.body', true>;
     footer: Attribute.Component<'footer.footer', true>;
+    User_id: Attribute.String;
+    userDetails: Attribute.Component<'user-details.user-details', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
