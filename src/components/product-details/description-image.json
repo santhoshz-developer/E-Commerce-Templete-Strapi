@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_product_details_description_images",
+  "info": {
+    "displayName": "DescriptionImage"
+  },
+  "options": {},
+  "attributes": {
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

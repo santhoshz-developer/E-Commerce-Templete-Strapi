@@ -1,0 +1,52 @@
+{
+  "collectionName": "components_product_details_product_details",
+  "info": {
+    "displayName": "productDetails",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "SideImages": {
+      "displayName": "SideImages",
+      "type": "component",
+      "repeatable": true,
+      "component": "product-details.side-images"
+    },
+    "SeletedImage": {
+      "displayName": "SeletedImage",
+      "type": "component",
+      "repeatable": true,
+      "component": "product-details.seleted-image"
+    },
+    "button": {
+      "displayName": "button",
+      "type": "component",
+      "repeatable": true,
+      "component": "product-details.button"
+    },
+    "extraDetails": {
+      "displayName": "extra-details",
+      "type": "component",
+      "repeatable": true,
+      "component": "product-details.extra-details"
+    },
+    "Share": {
+      "displayName": "Share",
+      "type": "component",
+      "repeatable": true,
+      "component": "product-details.share"
+    },
+    "seletedTabs": {
+      "displayName": "seletedTabs",
+      "type": "component",
+      "repeatable": true,
+      "component": "product-details.seleted-tabs"
+    },
+    "DescriptionImage": {
+      "displayName": "DescriptionImage",
+      "type": "component",
+      "repeatable": false,
+      "component": "product-details.description-image"
+    }
+  }
+}
