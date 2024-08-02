@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_product_details_side_images",
+  "info": {
+    "displayName": "SideImages"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "string"
+    },
+    "SideImages": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

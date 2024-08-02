@@ -379,6 +379,10 @@ export interface ApiECommerceECommerce extends Schema.CollectionType {
     footer: Attribute.Component<'footer.footer', true>;
     User_id: Attribute.String;
     userDetails: Attribute.Component<'user-details.user-details', true>;
+    productDetails: Attribute.Component<
+      'product-details.product-details',
+      true
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

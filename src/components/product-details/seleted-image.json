@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_product_details_seleted_images",
+  "info": {
+    "displayName": "SeletedImage"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "customerReview": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "size": {
+      "type": "json"
+    }
+  }
+}

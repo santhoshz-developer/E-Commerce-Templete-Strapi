@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_product_details_seleted_tabs",
+  "info": {
+    "displayName": "seletedTabs"
+  },
+  "options": {},
+  "attributes": {
+    "tabsHeading": {
+      "type": "json"
+    },
+    "Description1": {
+      "type": "text"
+    },
+    "Description2": {
+      "type": "text"
+    },
+    "additionalInformation": {
+      "type": "text"
+    },
+    "reviews": {
+      "type": "text"
+    }
+  }
+}
