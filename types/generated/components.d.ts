@@ -104,7 +104,6 @@ export interface HeaderNavMenu extends Schema.Component {
   };
 }
 
-
 export interface ProductDetailsButton extends Schema.Component {
   collectionName: 'components_product_details_buttons';
   info: {
